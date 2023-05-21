@@ -1,7 +1,3 @@
-// import axios from 'axios'
-// import { z } from 'zod'
-// import { prisma } from '../lib/prisma'
-
 import { randomUUID } from 'node:crypto'
 import { FastifyInstance } from 'fastify'
 import { createWriteStream } from 'node:fs'
