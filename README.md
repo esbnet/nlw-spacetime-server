@@ -31,7 +31,8 @@ Teremos no back-end a autenticação do usuário, a permissão de rotas e o logo
 - eslint
 - zod
 
-<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p> &uarr;
+<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p>
+
 <a id="arch"></a>
 ## Arquitetura do projeto / Autenticação OAuth (Github)
 
@@ -47,7 +48,8 @@ Após este processo, de posse do `access_token`, os clientes poderão realizar c
 
 ![imagem de configurações](./src/doc/arch-back.png)
 
-<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p> &uarr;
+<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p>
+
 <a id="features"></a> 
 ## Funcionalidades / Endpoints (api)
 
@@ -59,9 +61,9 @@ host:  http://localhost:3333
 - [x] Deleção de memória - `DELETE /memories/id`
 - [] Filtro de data
 
-<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p> &uarr;
-<a id="requisitos"></a>
+<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p>
 
+<a id="requisitos"></a>
 ## Pré-requisitos
 - node versão >= 16.16.0
 - npm versão >= 5.2.0 (já trás o npx)
@@ -69,14 +71,16 @@ host:  http://localhost:3333
 - Registrar aplicação OAuth no Github [Veja como](#registroGithub) &darr;
 - Criar tabelas no banco
 
-<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p> &uarr;
+<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p>
+
 <a id="database"></a>
 ## Criação das Tabelas
 
 ```
 DATABASE_URL="file:./data/dev.db"
 ```
-<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p> &uarr;
+<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p>
+
 <a id="install"></a>
 ## Como Instalar e Rodar a Aplicação
 
@@ -120,7 +124,8 @@ Para instalar e roda o servidor node basta seguir os passos descritos abaixo:
 ```
     NEXT_PUBLIC_SERVER_URL=http://0.0.0.0:3333
 ```
-<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p> &uarr;
+<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p>
+
 <a id="Registrar"></a>
 ## Login / Registro
 
@@ -128,14 +133,14 @@ Ao logar no aplicativo você obtêm sua lista de memórias registradas e está p
 
 ![imagem de configurações](./src/doc/logado.png)
 
-
 ## Inclusão de memória
 
 Clique em adicionar mídia, ecolha uma imagem que represente o momento, informe se irá ficar pública ou não, descreva o momento com os detalhes que achar necessário e clique em salvar. Pronto!😎 Sua memória foi registrada e poderá recordá-la sempre que sentir vontade.
 
 ![imagem de configurações](./src/doc/new_app.png)
 
-<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p> &uarr;
+<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p>
+
 <a id="registroGithub"></a>
 ## Registrar aplicação OAuth no Github 
 
