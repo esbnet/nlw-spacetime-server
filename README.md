@@ -59,7 +59,7 @@ host:  http://localhost:3333
 - [x] Listagem de memória - `GET /memories`
 - [x] Edição de memória - `PUT /memories/id` 
 - [x] Deleção de memória - `DELETE /memories/id`
-- [] Filtro de data
+- [ ] Filtro de data
 
 <p style="text-align:right"><a href="#menu">menu</a> &uarr;</p>
 
@@ -74,11 +74,29 @@ host:  http://localhost:3333
 <p style="text-align:right"><a href="#menu">menu</a> &uarr;</p>
 
 <a id="database"></a>
-## Criação das Tabelas
+## Criar Tabelas No Banco
+
+Toda a configuração do banco está pronta, porém é necessário a criação das tabelas utilizando o prisma.
+
+Lembrando que é nessário incluir nas variáveis de ambiente o caminho para grabação do banco de dados, que neste caso estamos utilizando o SQLite.
 
 ```
 DATABASE_URL="file:./data/dev.db"
 ```
+
+Após esta configuração, basta abrir o terminal na pasta do projeto e rodar o comando a seguir:
+```
+npx prisma generate 
+npx prisma migrate
+```
+Para confirmar a criação das tabelas você pode utilizar a ferramenta "Prisma Studio".
+```
+npx prisma studio
+```
+
+Para mais informações, consute a documentação : [Prisma - SQLite](https://www.prisma.io/docs/concepts/database-connectors/sqlite) / 
+[Prisma Migrate](https://www.prisma.io/docs/concepts/components/prisma-migrate)
+
 <p style="text-align:right"><a href="#menu">menu</a> &uarr;</p>
 
 <a id="install"></a>
@@ -97,11 +115,7 @@ Para instalar e roda o servidor node basta seguir os passos descritos abaixo:
 ```
     npm install
 ```
-4. Criar as tabelas no bando de cados: 
-```
-    npx prisma migrate
-```
-6. Criar na pasta raiz o arquivo `.env` e configurar as credencias geradas no gitrub. Será necessário uma credencial para o acesso via web e outra para acesso via mobile. (Registrar aplicação OAuth no Github [Veja como](#registroGithub) &darr;)
+4. Criar na pasta raiz o arquivo `.env` e configurar as credencias geradas no gitrub. Será necessário uma credencial para o acesso via web e outra para acesso via mobile. (Registrar aplicação OAuth no Github [Veja como](#registroGithub) &darr;)
 ```
     # para aplicação web
     GITHUB_CLIENT_ID_WEB={seu código aqui}
@@ -110,34 +124,19 @@ Para instalar e roda o servidor node basta seguir os passos descritos abaixo:
     # para aplicação mobile
     GITHUB_CLIENT_ID_APP={seu código aqui}
     GITHUB_CLIENT_SECRET_APP={seu código aqui}
-
 ```
 5. Rodar o aplicativo: 
 ```
     npm run dev
 ```
-7. Criar a variável: 
+6. Criar a variável: 
 ```
     NEXT_PUBLIC_GITHUB_CLIENT_ID=código_client_id_gerado_no_git
 ```
-8. Criar a variável contendo endereço e porta do servidor (back-end/api)
+7. Criar a variável contendo endereço e porta do servidor (back-end/api)
 ```
     NEXT_PUBLIC_SERVER_URL=http://0.0.0.0:3333
 ```
-<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p>
-
-<a id="Registrar"></a>
-## Login / Registro
-
-Ao logar no aplicativo você obtêm sua lista de memórias registradas e está pronto para matar a saudade ou registrar novas memórias.
-
-![imagem de configurações](./src/doc/logado.png)
-
-## Inclusão de memória
-
-Clique em adicionar mídia, ecolha uma imagem que represente o momento, informe se irá ficar pública ou não, descreva o momento com os detalhes que achar necessário e clique em salvar. Pronto!😎 Sua memória foi registrada e poderá recordá-la sempre que sentir vontade.
-
-![imagem de configurações](./src/doc/new_app.png)
 
 <p style="text-align:right"><a href="#menu">menu</a> &uarr;</p>
 
