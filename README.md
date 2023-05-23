@@ -4,14 +4,13 @@
 Aqui temos a camada back-end do aplicativo que tem como objetivo permitir o registro de um acontecimento através de um post informando uma imagen/vídeo e um texto descrevendo o fato.
 
 Teremos no back-end a autenticação do usuário, a permissão de rotas e o logout do usuário, o upload dos arquivos de imgem armazenando em disco (ideal seria um serviço na núvem), bem como os end-points para criar, editar, excluir ou deletar uma memória.
-
-<a name="ancora"></a>
+## Conteúdo
+<a id="menu"></a>
 - [Techs](#techs)
 - [Arquitetura](#arch)
-- [Funcionalidades](#features)
+- [Funcionalidades / End-Points](#features)
 - [Criar Tabelas no Banco](#database)
 - [Instação e Execução](#install)
-- [End-Points](#endPoints)
 - [Registrar Aplicação OAuth - Github ](#registroGithub)
 
 <a id="techs"></a>
@@ -31,7 +30,7 @@ Teremos no back-end a autenticação do usuário, a permissão de rotas e o logo
 - eslint
 - zod
 
-----
+<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p> &uarr;
 <a id="arch"></a>
 ## Arquitetura do projeto / Autenticação OAuth (Github)
 
@@ -47,8 +46,8 @@ Após este processo, de posse do `access_token`, os clientes poderão realizar c
 
 ![imagem de configurações](./src/doc/arch-back.png)
 
-------
-<a id="featurea"></a> 
+<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p> &uarr;
+<a id="features"></a> 
 ## Funcionalidades / Endpoints (api)
 
 host:  http://localhost:3333
@@ -59,7 +58,7 @@ host:  http://localhost:3333
 - [x] Deleção de memória - `DELETE /memories/id`
 - [] Filtro de data
 
-----
+<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p> &uarr;
 <a id="requisitos"></a>
 
 ## Pré-requisitos
@@ -69,14 +68,14 @@ host:  http://localhost:3333
 - Registrar aplicação OAuth no Github [Veja como](#registroGithub) &darr;
 - Criar tabelas no banco
 
-----
+<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p> &uarr;
 <a id="database"></a>
 ## Criação das Tabelas
 
 ```
 DATABASE_URL="file:./data/dev.db"
 ```
-----
+<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p> &uarr;
 <a id="install"></a>
 ## Como Instalar e Rodar a Aplicação
 
@@ -120,7 +119,7 @@ Para instalar e roda o servidor node basta seguir os passos descritos abaixo:
 ```
     NEXT_PUBLIC_SERVER_URL=http://0.0.0.0:3333
 ```
-----
+<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p> &uarr;
 <a id="Registrar"></a>
 ## Login / Registro
 
@@ -135,7 +134,7 @@ Clique em adicionar mídia, ecolha uma imagem que represente o momento, informe 
 
 ![imagem de configurações](./src/doc/new_app.png)
 
------
+<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p> &uarr;
 <a id="registroGithub"></a>
 ## Registrar aplicação OAuth no Github 
 
@@ -154,3 +153,5 @@ Atalho:
 
 Consulte a documentaçãod o github para mais detalhes:
 [Autorizando Aplicativos OAuth](https://docs.github.com/pt/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps)
+
+<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p> 
