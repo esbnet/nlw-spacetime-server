@@ -110,7 +110,7 @@ Para mais informações, consute a documentação : [Prisma - SQLite](https://ww
 <p style="text-align:right"><a href="#menu">menu</a> &uarr;</p>
 
 <a id="install"></a>
-## Instalando e Rodar a Aplicação
+## Instação e Execução
 
 Para instalar e roda o servidor node basta seguir os passos descritos abaixo:
 1. Clonar o projeto: 
