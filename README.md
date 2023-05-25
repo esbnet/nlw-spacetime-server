@@ -1,16 +1,27 @@
-# Space Time - Server
-## Rede Social para Devs
+
+![imagem de configurações](./src/assets/arch-back.png)
+
+# Back-end / [Front-end](https://github.com/esbnet/nlw-spacetime-web) / [Mobile](https://github.com/esbnet/nlw-spacetime-app)
+<div align="center">
+
+![imagem de configurações](./src/assets/logo.png)
+
+</div>
+
+## Rede Social para Devs 
 
 Aqui temos a camada back-end do aplicativo que tem como objetivo permitir o registro de um acontecimento através de um post informando uma imagen/vídeo e um texto descrevendo o fato.
 
 Teremos no back-end a autenticação do usuário, a permissão de rotas e o logout do usuário, o upload dos arquivos de imgem armazenando em disco (ideal seria um serviço na núvem), bem como os end-points para criar, editar, excluir ou deletar uma memória.
 
+
 <a id="menu"></a>
 ## Conteúdo
 - [Techs](#techs)
 - [Arquitetura](#arch)
-- [Funcionalidades / End-Points](#features)
+- [Pré-requisitos](#requisitos)
 - [Criar Tabelas no Banco](#database)
+- [Funcionalidades / End-Points](#features)
 - [Instação e Execução](#install)
 - [Registrar Aplicação OAuth - Github ](#registroGithub)
 
@@ -46,7 +57,16 @@ A seguir descrevemos as etapas para a autenticação dos clientes (web/mobile) n
 
 Após este processo, de posse do `access_token`, os clientes poderão realizar chamadas a api do back-end.
 
-![imagem de configurações](./src/doc/arch-back.png)
+![imagem de configurações](./src/assets/arch-back.png)
+
+<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p>
+
+<a id="requisitos"></a>
+## Pré-requisitos
+- node versão >= 16.16.0
+- npm versão >= 5.2.0 (já trás o npx)
+- Registrar aplicação OAuth no Github (web e mobile) [Veja como](#registroGithub) &darr;
+- Criar tabelas no banco
 
 <p style="text-align:right"><a href="#menu">menu</a> &uarr;</p>
 
@@ -60,16 +80,6 @@ host:  http://localhost:3333
 - [x] Edição de memória - `PUT /memories/id` 
 - [x] Deleção de memória - `DELETE /memories/id`
 - [ ] Filtro de data
-
-<p style="text-align:right"><a href="#menu">menu</a> &uarr;</p>
-
-<a id="requisitos"></a>
-## Pré-requisitos
-- node versão >= 16.16.0
-- npm versão >= 5.2.0 (já trás o npx)
-- npx
-- Registrar aplicação OAuth no Github [Veja como](#registroGithub) &darr;
-- Criar tabelas no banco
 
 <p style="text-align:right"><a href="#menu">menu</a> &uarr;</p>
 
@@ -100,7 +110,7 @@ Para mais informações, consute a documentação : [Prisma - SQLite](https://ww
 <p style="text-align:right"><a href="#menu">menu</a> &uarr;</p>
 
 <a id="install"></a>
-## Como Instalar e Rodar a Aplicação
+## Instalando e Rodar a Aplicação
 
 Para instalar e roda o servidor node basta seguir os passos descritos abaixo:
 1. Clonar o projeto: 
@@ -150,13 +160,23 @@ Atalho:
 
 | Passos      |tela        |
 | ----------- |:-------------:|
-| 1. Clique em settins|![imagem de configurações](./src/doc/settins.png)|
-| 2. Clique em Developer settings|![imagem de configurações](./src/doc/dev_settins.png)|
-| 3. Clique em OAuth|![imagem de configurações](./src/doc/OAuth.png)|
-| 4. Clique em New OAuth App|![imagem de configurações](./src/doc/new_app.png)|
-| 5. Preencha os campos com os dados abaiso: <br>spacetime-web<br>http://localhost:3000<br>(opcional)<br>http://localhost:3000/ (para onde será redirecionado após o login)|![imagem de configurações](./src/doc/OAuthAplication.png)|
+| 1. Clique em settins|![imagem de configurações](./src/assets/settins.png)|
+| 2. Clique em Developer settings|![imagem de configurações](./src/assets/dev_settins.png)|
+| 3. Clique em OAuth|![imagem de configurações](./src/assets/OAuth.png)|
+| 4. Clique em New OAuth App|![imagem de configurações](./src/assets/new_app.png)|
+| 5. Preencha os campos com os dados abaiso: <br>spacetime-web<br>http://localhost:3000<br>(opcional)<br>http://localhost:3000/ (para onde será redirecionado após o login)|![imagem de configurações](./src/assets/OAuthAplication.png)|
 
 Consulte a documentaçãod o github para mais detalhes:
 [Autorizando Aplicativos OAuth](https://docs.github.com/pt/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps)
 
 <p style="text-align:right"><a href="#menu">menu</a> &uarr;</p> 
+
+
+---
+<div align="center">
+
+Este projeto foi construido durante um dos bootcamps promovido gratuitamente pela [rockeseat 🚀](https://rocketseat.com.br) que vem ajudando a carreira de milhares de devs em todo o Brasil. Parabéns aos envolvido!!
+<br>
+![imagem de configurações](./src/assets/rocketseat-logo.svg)
+
+</div>
