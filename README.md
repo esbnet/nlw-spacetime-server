@@ -173,10 +173,3 @@ Consulte a documentaçãod o github para mais detalhes:
 
 
 ---
-<div align="center">
-
-Este projeto foi construido durante um dos bootcamps promovido gratuitamente pela [rockeseat 🚀](https://rocketseat.com.br) que vem ajudando a carreira de milhares de devs em todo o Brasil. Parabéns aos envolvido!!
-<br>
-![imagem de configurações](./src/assets/rocketseat-logo.svg)
-
-</div>
